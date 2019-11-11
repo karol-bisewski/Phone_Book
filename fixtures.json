@@ -1,0 +1,386 @@
+[
+{
+  "model": "phone_book.person",
+  "pk": 1,
+  "fields": {
+    "first_name": "Adam",
+    "last_name": "Adamowski"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 2,
+  "fields": {
+    "first_name": "Ewa",
+    "last_name": "Ewowicz"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 3,
+  "fields": {
+    "first_name": "Marian",
+    "last_name": "Marianowski"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 4,
+  "fields": {
+    "first_name": "Jan",
+    "last_name": "Kowalski"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 5,
+  "fields": {
+    "first_name": "Grzegorz",
+    "last_name": "Grzegorzowski"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 6,
+  "fields": {
+    "first_name": "Marek",
+    "last_name": "Nowak"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 7,
+  "fields": {
+    "first_name": "Pawe\u0142",
+    "last_name": "Paw\u0142owski"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 8,
+  "fields": {
+    "first_name": "Aleksandra",
+    "last_name": "Aleksandrowicz"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 9,
+  "fields": {
+    "first_name": "Martyna",
+    "last_name": "Martynowska"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 10,
+  "fields": {
+    "first_name": "Adrian",
+    "last_name": "Adrianowski"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 11,
+  "fields": {
+    "first_name": "Agata",
+    "last_name": "Agatowska"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 12,
+  "fields": {
+    "first_name": "Filip",
+    "last_name": "Filipowicz"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 13,
+  "fields": {
+    "first_name": "Marek",
+    "last_name": "Markowski"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 14,
+  "fields": {
+    "first_name": "Franciszek",
+    "last_name": "Franciszkowicz"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 15,
+  "fields": {
+    "first_name": "Kacper",
+    "last_name": "Nowak"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 16,
+  "fields": {
+    "first_name": "Hilary",
+    "last_name": "Hilarowski"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 17,
+  "fields": {
+    "first_name": "Katarzyna",
+    "last_name": "Katarzynowicz"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 18,
+  "fields": {
+    "first_name": "Rafa\u0142",
+    "last_name": "Rafa\u0142owski"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 19,
+  "fields": {
+    "first_name": "Marta",
+    "last_name": "Martowska"
+  }
+},
+{
+  "model": "phone_book.person",
+  "pk": 20,
+  "fields": {
+    "first_name": "Karol",
+    "last_name": "Karolowski"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 1,
+  "fields": {
+    "person": 20,
+    "phone": "123123123"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 2,
+  "fields": {
+    "person": 18,
+    "phone": "147147147"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 3,
+  "fields": {
+    "person": 18,
+    "phone": "321321321"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 4,
+  "fields": {
+    "person": 17,
+    "phone": "951951951"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 5,
+  "fields": {
+    "person": 16,
+    "phone": "456456456"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 6,
+  "fields": {
+    "person": 15,
+    "phone": "741741741"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 7,
+  "fields": {
+    "person": 14,
+    "phone": "852852852"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 8,
+  "fields": {
+    "person": 14,
+    "phone": "564987321"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 9,
+  "fields": {
+    "person": 14,
+    "phone": "789456456"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 10,
+  "fields": {
+    "person": 13,
+    "phone": "123123456"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 11,
+  "fields": {
+    "person": 19,
+    "phone": "555222888"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 12,
+  "fields": {
+    "person": 1,
+    "phone": "444555666"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 14,
+  "fields": {
+    "person": 3,
+    "phone": "123123456"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 15,
+  "fields": {
+    "person": 5,
+    "phone": "777888999"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 16,
+  "fields": {
+    "person": 5,
+    "phone": "111222333"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 17,
+  "fields": {
+    "person": 7,
+    "phone": "555888999"
+  }
+},
+{
+  "model": "phone_book.phone",
+  "pk": 18,
+  "fields": {
+    "person": 9,
+    "phone": "444666222"
+  }
+},
+{
+  "model": "phone_book.email",
+  "pk": 1,
+  "fields": {
+    "person": 20,
+    "email": "karol@example.com"
+  }
+},
+{
+  "model": "phone_book.email",
+  "pk": 2,
+  "fields": {
+    "person": 19,
+    "email": "marta@example.pl"
+  }
+},
+{
+  "model": "phone_book.email",
+  "pk": 3,
+  "fields": {
+    "person": 17,
+    "email": "kk@example.com"
+  }
+},
+{
+  "model": "phone_book.email",
+  "pk": 4,
+  "fields": {
+    "person": 15,
+    "email": "kacnow@example.eu"
+  }
+},
+{
+  "model": "phone_book.email",
+  "pk": 5,
+  "fields": {
+    "person": 14,
+    "email": "ff@asdfghj.com"
+  }
+},
+{
+  "model": "phone_book.email",
+  "pk": 6,
+  "fields": {
+    "person": 1,
+    "email": "aa@example.com"
+  }
+},
+{
+  "model": "phone_book.email",
+  "pk": 7,
+  "fields": {
+    "person": 3,
+    "email": "marian@marianowski.com"
+  }
+},
+{
+  "model": "phone_book.email",
+  "pk": 8,
+  "fields": {
+    "person": 5,
+    "email": "gg@example.com"
+  }
+},
+{
+  "model": "phone_book.email",
+  "pk": 9,
+  "fields": {
+    "person": 6,
+    "email": "mareknowak@example.com"
+  }
+},
+{
+  "model": "phone_book.email",
+  "pk": 10,
+  "fields": {
+    "person": 9,
+    "email": "martyna@example.pl"
+  }
+},
+{
+  "model": "phone_book.email",
+  "pk": 11,
+  "fields": {
+    "person": 9,
+    "email": "martyna@martynowska.com"
+  }
+}
+]

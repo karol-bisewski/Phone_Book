@@ -1,0 +1,10 @@
+{% extends 'phone_book/base.html' %}
+{% load i18n %}
+{% block content %}
+    <form action="{% url 'phone_book:add-contact' %}" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+    </form><br>
+    <a href="{% url 'phone_book:contacts' %}">{% trans 'Cancel' %}</a>
+{% endblock %}

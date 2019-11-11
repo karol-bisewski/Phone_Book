@@ -1,0 +1,7 @@
+{% extends 'phone_book/base.html' %}
+{% load i18n %}
+{% block content %}
+    <p>{% blocktrans %}You cannot delete your contact {{ person }},
+        because this contact has assigned phone number or email address.{% endblocktrans %}</p>
+    <a href="{{ request.META.HTTP_REFERER }}">{% trans 'Go back.' %}</a>
+{% endblock %}

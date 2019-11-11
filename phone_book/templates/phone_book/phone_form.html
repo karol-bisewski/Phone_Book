@@ -1,0 +1,12 @@
+{% extends 'phone_book/base.html' %}
+{% load i18n %}
+{% block content %}
+    <p>{% blocktrans %}Adding phone number to {{ person }}{% endblocktrans %}</p>
+    <form action="{% url 'phone_book:add-phone' person.pk %}" method="post">
+    {% csrf_token %}
+        {{ form.person.as_hidden }}
+        <label>{{ form.phone.label_tag }}</label>{{ form.phone }}
+    <input type="submit" value="Submit">
+    </form><br>
+    <a href="{% url 'phone_book:contacts' %}">{% trans 'Cancel' %}</a>
+{% endblock %}

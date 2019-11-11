@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #c8ecff;
+}
+
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+aside {
+    flex: 1;
+}
+
+main {
+    flex: 5;
+}
+
+aside {
+    padding: 0;
+    background-color: #4aa1ff;
+    box-shadow: 2px 2px 3px lightslategrey;
+    z-index: 1;
+}
+
+aside nav div a {
+    color: wheat;
+    font-family: sans-serif;
+    display: block;
+    text-decoration: none;
+    line-height: 300%;
+    white-space: nowrap;
+}
+
+aside nav div {
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+aside nav div:hover {
+    background-color: #5cacff;
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search input[type=text] {
+    flex: 9;
+    max-height: 10px;
+}
+
+.search input[type=submit] {
+    flex: 1;
+}
+
+
+.contact-list {
+    overflow: auto;
+}
+
+.person {
+    width: 100%;
+    padding-top: 10px;
+    background-color: #b6d0ff;
+    border-bottom: 1px dimgrey dotted;
+
+}
+.person:nth-child(even) {
+    background-color: #c8ecff;
+}
+
+.person-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.emails, .phones {
+    border: darkgrey 1px dashed;
+    flex: 1;
+    margin: 3px;
+}
+.emails ul li {
+    list-style-image: url("../img/envelope.png");
+}
+.phones ul li {
+    list-style-image: url("../img/phone.png");
+}
+
+
+.person-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.person-name {
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+.button:hover {
+    background-color: #5cacff;
+}
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: wheat;
+    background-color: #4aa1ff;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: 5px 5px;
+    box-shadow: 1px 1px 2px grey;
+    margin-top: 3px;
+
+}
+@media (min-width: 768px) {
+    .person-name div {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+  .person-buttons {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    baseline-shift: 0;
+    line-height: 0;
+  }
+    .person-buttons .button {
+        flex-grow: 1;
+        line-height: 65%;
+        margin: 1px 3px 0 3px;
+        opacity: 90%;
+    }
+}
+
+.query {
+    font-style: italic;
+}

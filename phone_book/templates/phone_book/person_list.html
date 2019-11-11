@@ -1,0 +1,48 @@
+{% extends 'phone_book/base.html' %}
+{% load i18n %}
+{% block content %}
+<form action="{% url 'phone_book:search' %}" method="get" class="search"><input type="text" name="q">
+    <input type="submit" value="{% trans 'Search' %}"></form>
+<div class="contact-list">
+{% if q %}
+    <div>{% trans 'Search result for' %} <span class="query">{{ q }}</span></div>
+{% endif %}
+{% if person_list %}
+    {% for person in person_list %}
+        <div class="person">
+            <div>
+                <div class="person-header">
+                    <div class="person-name">
+                        <div>{{ person }}</div>
+                    </div>
+                    <div class="person-buttons">
+                        <a class="button" href="{% url 'phone_book:edit-contact' person.pk %}">{% trans 'Edit' %}</a>&nbsp
+                        <a class="button" href="{% url 'phone_book:delete-contact' person.pk %}">{% trans 'Delete' %}</a>&nbsp
+                        <a class="button" href="{% url 'phone_book:add-phone' person.pk %}">{% trans 'Add phone' %}</a>&nbsp
+                        <a class="button" href="{% url 'phone_book:add-email' person.pk %}">{% trans 'Add email' %}</a>&nbsp;
+                    </div>
+                </div>
+            </div>
+            <div class="person-details">
+                <div class="phones">
+                    <ul>
+                    {% for phone_number in person.phone_set.all %}
+                        <li>{{ phone_number }}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                <div class="emails">
+                    <ul>
+                    {% for email in person.email_set.all %}
+                        <li>{{ email }}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    Your contact list is empty.
+{% endif %}
+</div>
+{% endblock %}

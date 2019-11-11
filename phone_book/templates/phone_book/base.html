@@ -1,0 +1,42 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{% block title %}{% trans 'Phone Book' %}{% endblock %}</title>
+  <meta charset="utf-8">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'phone_book/css/style.css' %}">
+</head>
+<body>
+
+    <div class="container">
+      <aside class="item">
+        <nav class="">
+          <div><a href="{% url 'phone_book:contacts' %}">{% trans 'All contacts' %}</a></div>
+          <div><a href="{% url 'phone_book:add-contact' %}">{% trans 'Add new' %}</a></div>
+        </nav>
+      </aside>
+      <main class="item">
+          {% block content %}{% endblock %}
+          {% block pagination %}
+              {% if is_paginated %}
+                  <div>
+                    <span>
+                        {% if page_obj.has_previous %}
+                          <a href="{{ request.path }}?page={{ page_obj.previous_page_number }}">{% trans 'previous' %}</a>
+                        {% endif %}
+                        <span>
+                            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                        </span>
+                        {% if page_obj.has_next %}
+                            <a href="{{ request.path }}?page={{ page_obj.next_page_number }}">{% trans 'next' %}</a>
+                        {% endif %}
+                    </span>
+                  </div>
+              {% endif %}
+          {% endblock %}
+      </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{% extends 'phone_book/base.html' %}
+{% load i18n %}
+{% block content %}
+<form method="post">
+{% csrf_token %}
+    <p>{% trans 'Are you sure to delete' %} {{ person }}?</p>
+    <a href="{{ request.META.HTTP_REFERER }}">{% trans 'Cancel' %}</a>
+<input type="submit" value="Yes, delete.">
+</form>
+{% endblock %}
